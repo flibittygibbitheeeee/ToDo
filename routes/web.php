@@ -22,6 +22,8 @@ Route::get('/analytics', function () {
     return view('analytics')->name('analytics');
 });
 
+Route::view('/', 'auth.login');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
