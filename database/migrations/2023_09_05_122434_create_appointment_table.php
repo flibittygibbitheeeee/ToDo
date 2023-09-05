@@ -11,8 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('appointment', function (Blueprint $table) {
+        Schema::create('appointments', function (Blueprint $table) {
             $table->id();
+            $table->string('full_name', 100);
+            $table->string('gender', 6);
+            $table->float('weight');
+            $table->string('assigned_doctor', 100);
+            $table->date('admit_date');
+            $table->string('disease', 100);
+
+
             $table->timestamps();
         });
     }
