@@ -100,34 +100,34 @@
             <div class="h5 pd-20 mb-0">Recent Patient</div>
             <table class="data-table table nowrap">
                 <thead>
-                @foreach ($appointments as $appointments)
                     <tr>
-                        <th>{{ $appointments -> full_Name}}</th>
-                        <th>{{ $appointments -> gender}}</th>
-                        <th>{{ $appointments -> assigned_doctor}}</th>
-                        <th>{{ $appointments -> admit_date}}</th>
-                        <th>{{ $appointments -> disease}}</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Doctor</th>
+                        <th>Date Admitted</th>
+                        <th>Disease</th>
                         <th class="datatable-nosort">Actions</th>
                     </tr>
-                @endforeach
+       
                 </thead>
-                <!-- <tbody>
+                <tbody>
+                    @foreach ($appointments as $appointment)
                     <tr>
                         <td class="table-plus">
                             <div class="name-avatar d-flex align-items-center">
-                                <div class="avatar mr-2 flex-shrink-0">
+                                {{-- <div class="avatar mr-2 flex-shrink-0">
                                     <img src="/back/vendors/images/photo4.jpg" class="border-radius-100 shadow" width="40" height="40" alt=""/>
-                                </div>
+                                </div> --}}
                                 <div class="txt">
-                                    <div class="weight-600">Jennifer O. Oster</div>
+                                    <div class="weight-600">{{ $appointment -> full_Name}}</div>
                                 </div>
                             </div>
                         </td>
-                        <td>Female</td>
-                        <td>Dr. Callie Reed</td>
-                        <td>19 Oct 2020</td>
+                        <td>{{ $appointment -> gender}}</td>
+                        <td>{{ $appointment -> assigned_doctor}}</td>
+                        <td>{{ $appointment -> admit_date}}</td>
                         <td>
-                            <span class="badge badge-pill" data-bgcolor="#e7ebf5" data-color="#265ed7">Typhoid</span>
+                            <span class="badge badge-pill" data-bgcolor="#e7ebf5" data-color="#265ed7">{{ $appointment -> disease}}</span>
                         </td>
                         <td>
                             <div class="table-actions">
@@ -140,37 +140,10 @@
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="table-plus">
-                            <div class="name-avatar d-flex align-items-center">
-                                <div class="avatar mr-2 flex-shrink-0">
-                                    <img src="/back/vendors/images/photo5.jpg" class="border-radius-100 shadow" width="40" height="40" alt=""/>
-                                </div>
-                                <div class="txt">
-                                    <div class="weight-600">Doris L. Larson</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>Male</td>
-                        <td>Dr. Ren Delan</td>
-                        <td>22 Jul 2020</td>
-                        <td>
-                            <span class="badge badge-pill" data-bgcolor="#e7ebf5" data-color="#265ed7">Dengue</span>
-                        </td>
-                        <td>
-                            <div class="table-actions">
-                                <a href="#" data-color="#265ed7"
-                                    ><i class="icon-copy dw dw-edit2"></i
-                                ></a>
-                                <a href="#" data-color="#e95959"
-                                    ><i class="icon-copy dw dw-delete-3"></i
-                                ></a>
-                            </div>
-                        </td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
-        </div> -->
+        </div>
 
     </x-app-layout>
 </div>

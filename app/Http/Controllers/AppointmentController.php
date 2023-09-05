@@ -12,6 +12,6 @@ class AppointmentController extends Controller
     {
         $data = Appointment::all();
 
-        return view('dashboard.index', ['appointments' => $data]);
+        return view('appointment.index', ['appointments' => $data]);
     }
 }
