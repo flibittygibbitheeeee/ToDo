@@ -170,11 +170,12 @@
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-table"></span
-								><span class="mtext">Tables</span>
+								><span class="mtext">Appointments</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="basic-table.html">Basic Tables</a></li>
-								<li><a href="datatable.html">DataTables</a></li>
+								<li><a href="#">Upcoming</a></li>
+								<li><a href="#">Today</a></li>
+								<li><a href="#">Cancelled</a></li>
 							</ul>
 						</li>
 						<li>
