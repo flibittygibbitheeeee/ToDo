@@ -111,7 +111,7 @@
                     </tr>
                 @endforeach
                 </thead>
-                <tbody>
+                <!-- <tbody>
                     <tr>
                         <td class="table-plus">
                             <div class="name-avatar d-flex align-items-center">
@@ -170,7 +170,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
 
     </x-app-layout>
 </div>
