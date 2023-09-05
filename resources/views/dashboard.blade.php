@@ -12,10 +12,8 @@
                             <div class="weight-600 font-30 text-blue">{{ Auth::user()->username }}!</div>
                         </h4>
                         <p class="font-16 max-width-600">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-                            hic non repellendus debitis iure, doloremque assumenda. Autem
-                            modi, corrupti, nobis ea iure fugiat, veniam non quaerat
-                            mollitia animi error corporis.
+                            A dentist like you is the one who is behind so many smiles.
+                            Thank you for giving others the confidence to smile with sparkles.
                         </p>
                     </div>
                 </div>
@@ -105,7 +103,6 @@
                     <tr>
                         <th class="table-plus">Name</th>
                         <th>Gender</th>
-                        <th>Weight</th>
                         <th>Assigned Doctor</th>
                         <th>Admit Date</th>
                         <th>Disease</th>
@@ -121,8 +118,7 @@
                                         src="/back/vendors/images/photo4.jpg"
                                         class="border-radius-100 shadow"
                                         width="40"
-                                        height="40"
-                                        alt=""
+                                        height="40" alt=""
                                     />
                                 </div>
                                 <div class="txt">
@@ -131,7 +127,6 @@
                             </div>
                         </td>
                         <td>Female</td>
-                        <td>45 kg</td>
                         <td>Dr. Callie Reed</td>
                         <td>19 Oct 2020</td>
                         <td>
