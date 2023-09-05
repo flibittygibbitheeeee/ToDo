@@ -173,6 +173,7 @@
 								><span class="mtext">Appointments</span>
 							</a>
 							<ul class="submenu">
+								<li><a href="#">New</a></li>
 								<li><a href="#">Upcoming</a></li>
 								<li><a href="#">Today</a></li>
 								<li><a href="#">Cancelled</a></li>
