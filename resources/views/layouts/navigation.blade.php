@@ -167,6 +167,48 @@
 			<div class="menu-block customscroll">
 				<div class="sidebar-menu">
 					<ul id="accordion-menu">
+						<li>
+							<a href="{{ route('dashboard') }}" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-house-door"></span>
+								<span class="mtext">Dashboard</span>
+							</a>
+						</li>
+						<li>
+							<a href="{{ route('dashboard') }}" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-command"></span>
+								<span class="mtext">Products</span>
+							</a>
+						</li>
+						<li>
+							<a href="{{ route('dashboard') }}" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-collection"></span>
+								<span class="mtext">Category</span>
+							</a>
+						</li>
+						<li>
+							<a href="{{ route('dashboard') }}" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-bag-plus"></span>
+								<span class="mtext">Purchases</span>
+							</a>
+						</li>
+						<li>
+							<a href="{{ route('dashboard') }}" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-bag-dash"></span>
+								<span class="mtext">Sales</span>
+							</a>
+						</li>
+						<li>
+							<a href="{{ route('dashboard') }}" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-file-earmark-richtext"></span>
+								<span class="mtext">Reports</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-graph-up-arrow"></span>
+								<span class="mtext">Analytics</span>
+							</a>
+						</li>						
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-table"></span
@@ -177,12 +219,6 @@
 								<li><a href="#">Today</a></li>
 								<li><a href="#">Cancelled</a></li>
 							</ul>
-						</li>
-						<li>
-							<a href="#" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-graph-up-arrow"></span>
-								<span class="mtext">Analytics</span>
-							</a>
 						</li>
 					</ul>
 				</div>
