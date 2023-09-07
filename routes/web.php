@@ -19,17 +19,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/analytics', function () {
-    return view('analytics')->name('analytics');
-});
+// Route::get('/analytics', function () {
+//     return view('analytics')->name('analytics');
+// });
 
-Route::view('/', 'auth.login');
+// Route::view('/', 'auth.login');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-// Route::get('/dashboard', [AppointmentController::class, 'index'])->name('appointment.index');
+Route::get('/appointment', [AppointmentController::class, 'index'])->name('appointment.index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -13,5 +13,7 @@ class AppointmentController extends Controller
         $data = Appointment::all();
 
         return view('appointment.index', ['appointments' => $data]);
+
+        // return ('Hello World');
     }
 }
